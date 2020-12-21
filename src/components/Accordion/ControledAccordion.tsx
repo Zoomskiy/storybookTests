@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-
 type AccordionPropsType = {
     title: string
     onClick: () => void
@@ -7,16 +6,12 @@ type AccordionPropsType = {
 }
 
 function ControlledAccordion(props: AccordionPropsType) {
-
-    {
         return (
             <div>
                 <AccordionTitle onClick={ props.onClick}  title={props.title}/>
                 {!props.dataCollapsed && <AccordionBody/>}
-
             </div>
         )
-    }
 }
 
 type AccordionTitlePropsType = {
