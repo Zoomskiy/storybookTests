@@ -41,6 +41,8 @@ function AccordionBody(props: AccordionBodyPropsType) {
         <div>
             <ul>
                 {props.items.map( (it, index) => <li onClick={ () => {props.onItemClick(it.value)} } key={index}>{it.title}</li>)}
+                {props.items.map( (it, index) => <li onClick={ () => {props.onItemClick(it.value)} } key={index}>{it.title}</li>)}
+                {props.items.map( (it, index) => <li onClick={ () => {props.onItemClick(it.value)} } key={index}>{it.title}</li>)}
             </ul>
         </div>
     )
